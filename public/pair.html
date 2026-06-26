@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAHA ULTRA CORE PANEL</title>
+    <style>
+        body { 
+            font-family: 'Segoe UI', system-ui, sans-serif; 
+            background: #090d16; 
+            color: #f1f5f9; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+            margin: 0; 
+        }
+        .panel-container { 
+            background: #111827; 
+            padding: 40px; 
+            border-radius: 16px; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5); 
+            border: 1px solid #1f2937; 
+            text-align: center; 
+            width: 100%; 
+            max-width: 420px; 
+        }
+        h1 { 
+            color: #a855f7; 
+            margin-bottom: 8px; 
+            font-weight: 800; 
+            letter-spacing: -0.5px; 
+        }
+        p { 
+            color: #9ca3af; 
+            font-size: 14px; 
+            margin-bottom: 30px; 
+        }
+        .input-box { 
+            width: 100%; 
+            padding: 14px; 
+            margin-bottom: 20px; 
+            border-radius: 8px; 
+            border: 1px solid #374151; 
+            background: #030712; 
+            color: #fff; 
+            box-sizing: border-box; 
+            font-size: 14px; 
+            transition: 0.2s; 
+        }
+        .input-box:focus { 
+            border-color: #a855f7; 
+            outline: none; 
+            box-shadow: 0 0 0 2px rgba(168,85,247,0.2); 
+        }
+        .action-btn { 
+            width: 100%; 
+            padding: 14px; 
+            background: #a855f7; 
+            border: none; 
+            color: #fff; 
+            font-weight: bold; 
+            border-radius: 8px; 
+            cursor: pointer; 
+            font-size: 16px; 
+            transition: 0.2s; 
+        }
+        .action-btn:hover { 
+            background: #9333ea; 
+            transform: translateY(-1px); 
+        }
+        .footer-text {
+            margin-top: 20px;
+            font-size: 11px;
+            color: #4b5563;
+        }
+    </style>
+</head>
+<body>
+    <div class="panel-container">
+        <h1>TAHA ULTRA CORE</h1>
+        <p>Deploy your session instance straight to the secure cluster engine.</p>
+        <form action="/activate" method="POST">
+            <input type="text" name="session_token" class="input-box" placeholder="Enter base64 session token string..." required>
+            <button type="submit" class="action-btn">Activate Instance</button>
+        </form>
+        <div class="footer-text">Powered by Taha Babu &copy; 2026</div>
+    </div>
+</body>
+</html>
